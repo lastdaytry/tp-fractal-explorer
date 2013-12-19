@@ -29,6 +29,11 @@ fractalExplorer::fractalExplorer(QWidget *parent)
     resize(550, 400);
 }
 
+fractalExplorer::~fractalExplorer()
+{
+    delete(thread);
+}
+
 void fractalExplorer::paintEvent(QPaintEvent * /* event */)
 {
     QPainter painter(this);

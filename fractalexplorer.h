@@ -16,6 +16,7 @@
 
  public:
      fractalExplorer(QWidget *parent = 0);
+     ~fractalExplorer();
      Fractal *thread;
      QPixmap pixmap;
 
