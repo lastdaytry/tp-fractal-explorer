@@ -12,9 +12,19 @@ TARGET = fractalExplorer
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp
+SOURCES += main.cpp \
+        mainwindow.cpp \
+    fractal.cpp \
+    fractalexplorer.cpp \
+    fractalmandelbrot.cpp \
+    fractaltricorn.cpp \
+    fractalburningship.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    fractal.h \
+    fractalexplorer.h \
+    fractalmandelbrot.h \
+    fractaltricorn.h \
+    fractalburningship.h
 
 FORMS    += mainwindow.ui
