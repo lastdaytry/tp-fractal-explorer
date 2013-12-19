@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->fractalArea = new fractalExplorer(ui->centralWidget);
-    ui->fractalArea->setGeometry(QRect(10, 30, 551, 351));
+    ui->fractalArea->setGeometry(QRect(10, 30, 551, 401));
     ui->colorChooser->setCurrentIndex(0);
     connect(ui->fractalChooser, SIGNAL(currentIndexChanged(int)),
             ui->fractalArea, SLOT(changeFractalType(int)));

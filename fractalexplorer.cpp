@@ -189,7 +189,7 @@ void fractalExplorer::changeFractalType(int fractalType)
         thread = 0;
         thread = new fractalBurningShip;
         centerX = -0.637011f;
-        centerY = -0.0395159f;
+        centerY = -0.4795159f;
         pixmapScale = 0.00717897f;
         curScale = 0.00717897f;
     }

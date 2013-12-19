@@ -68,13 +68,13 @@ void fractalBurningShip::run()
                     do {
                         ++numIterations;
                         double a2 = (a1 * a1) - (b1 * b1) + ax;
-                        double b2 = (2 * abs(a1) * abs(b1)) - ay;
+                        double b2 = (2 * fabs(a1) * fabs(b1)) + ay;
                         if ((a2 * a2) + (b2 * b2) > Limit)
                             break;
 
                         ++numIterations;
-                        a1 = (a2 * a2) - (b2 * b2) - ax;
-                        b1 = (2 * abs(a2) * abs(b2)) - ay;
+                        a1 = (a2 * a2) - (b2 * b2) + ax;
+                        b1 = (2 * fabs(a2) * fabs(b2)) + ay;
                         if ((a1 * a1) + (b1 * b1) > Limit)
                             break;
                     } while (numIterations < MaxIterations);
